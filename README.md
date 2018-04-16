@@ -2,7 +2,7 @@
 
 ### Reference
 
-Big data, artificial intelligence and various Java examples for learning
+Big Data, Artificial Intelligence(AI) and various Java examples for learning
 
 ```markdown
 # Development environment
