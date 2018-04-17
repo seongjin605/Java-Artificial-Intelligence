@@ -7,12 +7,11 @@ import com.univocity.parsers.common.processor.RowListProcessor;
 import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
 
-
 public class TestUnivocity {
 
 	public static void main(String[] args) {
 		TestUnivocity testUnivocity = new TestUnivocity();
-		testUnivocity.parseCSV("C:/Users/admin/Desktop/SPiDER_TM_tm.csv");
+		testUnivocity.parseCSV("C:/Users/admin/Desktop/all2.csv");
 	}
 
 	public void parseCSV(String fileName) {
@@ -20,7 +19,7 @@ public class TestUnivocity {
 		CsvParserSettings parserSettings = new CsvParserSettings();
 		parserSettings.setLineSeparatorDetectionEnabled(true);
 		
-		//파싱된 각 행을1 리스트에 저장하는 RowListProcessor 생성
+		//파싱된 각 행을 리스트에 저장하는 RowListProcessor 생성
 		RowListProcessor rowListProcessor = new RowListProcessor();
 		parserSettings.setRowProcessor(rowListProcessor);
 		
@@ -33,7 +32,7 @@ public class TestUnivocity {
 		String[] headers = rowListProcessor.getHeaders();
 
 		List<String[]> rows = rowListProcessor.getRows();
-		for (int i = 0; i <= rows.size(); i++) {
+		for (int i = 0; i < rows.size(); i++) {
 			System.out.println(Arrays.asList(rows.get(i)));
 		}
 	}
