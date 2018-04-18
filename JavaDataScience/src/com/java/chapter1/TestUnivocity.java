@@ -11,7 +11,7 @@ public class TestUnivocity {
 
 	public static void main(String[] args) {
 		TestUnivocity testUnivocity = new TestUnivocity();
-		testUnivocity.parseCSV("C:/Users/admin/Desktop/all2.csv");
+		testUnivocity.parseCSV("C:/Users/admin/Desktop/all.csv");
 	}
 
 	public void parseCSV(String fileName) {
