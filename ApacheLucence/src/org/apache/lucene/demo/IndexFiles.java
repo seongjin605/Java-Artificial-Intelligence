@@ -39,7 +39,6 @@ public class IndexFiles {
 
 			Analyzer analyzer = new StandardAnalyzer();
 			IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
-
 			if (create) {
 				iwc.setOpenMode(OpenMode.CREATE);
 			} else {
